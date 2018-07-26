@@ -1,0 +1,101 @@
+@import '../../../node_modules/normalize-styl/normalize.styl'
+@import 'fonts'
+@import 'components/pages/404'
+@import 'components/pages/panel'
+
+*
+  box-sizing border-box
+
+html
+  height 100%
+  font-family Roboto
+  font-weight: 400
+  background-image: url('./assets/img/top-bg.png');
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+#app
+  height 100%
+
+.content
+  min-height: calc(100vh - 80px);
+  padding-bottom 55px
+
+.footer
+  padding 20px
+  background #fefefe
+  img
+    height 40px
+
+.container
+  width: 1000px
+  margin: 0 auto
+  @media(max-width 1000px)
+    width: 100%
+
+.main
+  width 745px
+  margin 20px
+  margin-bottom 0
+  position relative
+  @media(max-width 768px)
+    width 100%
+    margin-left 0
+    margin-right 0
+
+.block
+  width 100%
+  padding 20px
+  background #ffffff
+  border-radius: 10px
+  margin-top 20px
+
+.welcome
+  background-image: url('./assets/img/top-bg.png');
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: none;
+  min-height: 100vh;
+  padding-top 1px
+  .container
+    margin-top 10%
+  img
+    display block
+  .auth
+    width 350px
+    display block
+    margin 0 auto
+    text-align center
+    margin-top 80px
+    input
+      width 100%
+      background none
+      border: 1px solid #fff;
+      outline: none;
+      border-radius: 25px;
+      font-size: 24px;
+      line-height 54px
+      margin-bottom 20px
+      padding-left 20px
+      color #ffffff
+      font-family: Roboto;
+      font-weight 100
+    a
+      font-family: Roboto;
+      font-weight: 100;
+      font-style: normal;
+      font-size: 20px;
+      color: #fff;
+      padding: 15px 15px;
+      border-radius: 25px;
+      cursor pointer
+      display inline-block
+      &:hover
+        background: #FFFFFF;
+        border-color: #D117BE!important;
+        color: #D91CC0;
+
+    
+  
