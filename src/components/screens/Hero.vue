@@ -9,7 +9,7 @@
             отказоустойчивые интернет-проекты под высокие нагрузки.
           </p>
           <img
-            v-scroll-to="{ element: '#advantages', duration: 2000 }"
+            v-scroll-to="{ element: '#advantages', duration: 2000, offset: -100, }"
             class="arrow" src="../../assets/img/arrow.png" alt="">
         </div>
       </div>
@@ -18,7 +18,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'Hero',
   data: () => ({
@@ -26,7 +25,7 @@ export default {
   methods: {
     headerScroll() {
       const headerElement = document.querySelector('.header');
-      const endOfHeroScreen = (document.querySelector('.advantages-screen').getBoundingClientRect().top + window.pageYOffset) - 20;
+      const endOfHeroScreen = (document.querySelector('.advantages-screen').getBoundingClientRect().top + window.pageYOffset) - 150;
       window.onscroll = () => {
         if (headerElement.classList.contains('header-colored') && window.pageYOffset < endOfHeroScreen) {
           headerElement.classList.remove('header-colored');

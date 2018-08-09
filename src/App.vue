@@ -1,10 +1,17 @@
 <template>
   <div id="app">
-    <router-view/>
+    <div class="content-wrapper" :class="{space_bg: this.$route.name === 'vacancies'}">
+      <header-block></header-block>
+      <router-view/>
+    </div>
+    <footer-block></footer-block>
   </div>
 </template>
 
 <script>
+import HeaderBlock from './components/elements/Header';
+import FooterBlock from './components/elements/Footer';
+
 export default {
   name: 'App',
   data: () => ({
@@ -14,6 +21,8 @@ export default {
   methods: {
   },
   components: {
+    HeaderBlock,
+    FooterBlock
   }
 };
 </script>

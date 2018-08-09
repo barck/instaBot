@@ -2,7 +2,7 @@
   background: url(./assets/img/bg_space1.jpg) repeat-x 100% 0 fixed
   background-position: top;
   height: 100vh;
-  animation: space 250s linear infinite
+  animation: space 350s linear infinite
 
 @keyframes space 
   from { background-position: 3840px 0, 0 0;}
@@ -11,7 +11,7 @@
 .hero-clouds
   background: url(./assets/img/bg_clouds.png) repeat-x 100% 0 fixed;
   background-position: top;
-  animation: clouds 40s linear infinite;
+  animation: clouds 80s linear infinite;
   height: 100vh;
 
 @keyframes clouds
@@ -26,10 +26,9 @@
   padding-top 1px
   background-position bottom
   @media(max-width 768px)
-    background-size: 350%;
-    background-position: center !important;
+    background-position: bottom !important;
     background-repeat: no-repeat !important;
-    background-size: cover !important;
+    background-size: 200vh !important;
   h1
     color #fff
     font-weight 100
@@ -41,8 +40,9 @@
     font-family Montserrat
     text-transform uppercase
     @media(max-width 768px)
-      font-size 36px
-      line-height 50px
+      font-size 22px
+      line-height 45px
+      margin-bottom 10vh
   p
     color #fff
     font-weight 100
@@ -60,10 +60,11 @@
   margin-left -26px
   position absolute
   bottom 15%
+  @media(max-width 960px)
+    bottom 10%
   &:hover
     transform scale(1.2)
     transition: .2s
-
 
 .fadeInDown 
   animation-name: fadeInDown;

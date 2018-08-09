@@ -1,32 +1,34 @@
 <template>
   <div class="index">
-    <header-block></header-block>
     <hero></hero>
     <div class="main-content">
       <advantages></advantages>
+      <proccess></proccess>
+      <map-screen></map-screen>
+      <contacts></contacts>
     </div>
   </div>
 </template>
 
 <script>
-// import router from '@/router';
 import Hero from '../screens/Hero';
 import Advantages from '../screens/Advantages';
-import HeaderBlock from '../elements/Header';
+import Proccess from '../screens/Proccess';
+import MapScreen from '../screens/Map';
+import Contacts from '../screens/Contacts';
 
 export default {
   name: 'Index',
   data: () => ({
   }),
   methods: {
-    // login() {
-    //   router.push({ name: 'panel' });
-    // }
   },
   components: {
-    HeaderBlock,
     Hero,
-    Advantages
+    Advantages,
+    Proccess,
+    MapScreen,
+    Contacts
   }
 };
 </script>

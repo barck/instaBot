@@ -1,0 +1,96 @@
+.contacts-screen
+  background: url(./assets/img/bg_space_2.jpg) no-repeat
+  background-size cover
+  background-position center
+  height: 100vh
+  color #fff
+  text-align center
+  padding-top 40px
+  @media(max-width 800px)
+    background-size auto
+    height 110vh
+    padding-bottom: 80px;
+  .contacts-head
+    font-size 62px
+    color #fff
+    font-family Montserrat
+    font-weight 100
+    margin-top 200px
+    @media(max-width 800px)
+      margin-top 60px
+      font-size 36px
+      margin 0
+      margin-bottom 20px
+  form
+    width 100%
+    input
+      width 50%
+      display block
+      border none
+      margin 0 auto
+      background rgba(230, 230, 230, .1)
+      font-size 24px
+      color #ffffff
+      font-weight 100
+      padding 20px
+      margin-bottom 20px
+      &:focus
+        outline 1px solid #fff
+        background rgba(230, 230, 230, .2)
+      @media(max-width 800px)
+        width 90%
+    textarea
+      width 50%
+      display block
+      margin 0 auto
+      background rgba(230, 230, 230, .1)
+      font-size 24px
+      color #ffffff
+      font-weight 100
+      padding 20px
+      border none 
+      outline none
+      margin-bottom 20px
+      font-weight 100
+      &:focus
+        outline 1px solid #fff
+        background rgba(230, 230, 230, .2)
+      @media(max-width 800px)
+        width 90%
+    button
+      width 50%
+      display block
+      margin 0 auto
+      border none 
+      outline none
+      background #8f44ae
+      color #fff
+      padding 20px
+      font-size 24px
+      font-weight 100
+      cursor pointer
+      @media(max-width 800px)
+        width 90%
+      &:hover
+        background #57216d
+      &:active
+        background #340946
+
+footer
+  display flex
+  justify-content space-between
+  align-items center
+  color #ffffff
+  padding 10px 10%
+  font-size 18px
+  font-weight 100
+  font-family Montserrat
+  background #1a1a23
+  @media(max-width 800px)
+    font-size 14px
+    padding 10px 10px
+  a
+    text-decoration none
+    color #fff
+    &:hover
+      text-decoration underline

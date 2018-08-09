@@ -6040,6 +6040,10 @@ vue-eslint-parser@^2.0.3:
     esquery "^1.0.0"
     lodash "^4.17.4"
 
+vue-hamburger@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/vue-hamburger/-/vue-hamburger-0.1.2.tgz#33adf2627e1b03f9eac12cc1c0abf8a03ed42e43"
+
 vue-hot-reload-api@^2.2.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.0.tgz#97976142405d13d8efae154749e88c4e358cf926"

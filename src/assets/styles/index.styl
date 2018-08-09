@@ -4,6 +4,11 @@
 @import 'components/screens/hero'
 @import 'components/elements/header'
 @import 'components/screens/advantages'
+@import 'components/screens/proccess'
+@import 'components/screens/map'
+@import 'components/screens/contacts'
+@import 'components/pages/vacanties'
+@import 'components/pages/vacantiesItem'
 
 *
   box-sizing border-box
@@ -12,15 +17,38 @@ html
   height 100%
   font-family Roboto
   font-weight: 400
+
+body
+  overflow-x hidden
   background: url(./assets/img/17.jpg) no-repeat
   background-position: top;
+  background-size: cover
 
 #app
   height 100%
+
+.content-wrapper
+  min-height: calc(100vh - 80px);
+
+.space_bg
+  background: url(./assets/img/bg_space.jpg) repeat-x 100% 0 fixed
+  background-position: top;
+  background-size cover
+  animation: space-vac 50s linear infinite
 
 .container
   margin 0 auto
   width 960px
   @media(max-width 960px)
     width 100%
+
+.slide-fade-enter-active 
+  transition: all 1s ease;
+
+.slide-fade-leave-active 
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+
+.slide-fade-enter, .slide-fade-leave-to
+  transform: translateX(10px);
+  opacity: 0;
   

@@ -9,13 +9,19 @@ header
   height 80px
   position fixed
   text-align center
+  z-index 200
   @media(max-width 768px)
     padding 0
+    background: #25233d;
+    position static
+    height 40px
   .logo
     width 33%
     text-align center
+    cursor pointer
     @media(max-width 768px)
-      width 100%
+      width 50%
+      margin 0 auto
   a
     text-decoration none
     font-size 16px
@@ -23,6 +29,7 @@ header
     font-weight 400
     width 20%
     font-family Montserrat
+    cursor pointer
     &:hover
       text-decoration underline
     @media(max-width 768px)
@@ -30,3 +37,30 @@ header
 
 .header-colored
   background #23203b
+
+.hamburger-button
+  z-index 100
+  display none!important
+  position absolute!important
+  top 0
+  right 0
+  @media(max-width 768px)
+    display block
+
+.mobile-menu
+  display none
+  @media(max-width 768px)
+    display block
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    background: #25243d;
+    text-align left
+    padding 0 20px
+  a
+    @media(max-width 768px)
+      display block
+      width 100%
+      margin-bottom 20px
+      color #ffffff
+      text-decoration none
