@@ -1,7 +1,11 @@
 <template>
   <div class="vacanties">
-    <div class="vacanties-content">
+    <div class="vacanties-content fadeInDown">
       <div class="container">
+        <img
+          @click="$router.go(-1)"
+          class="arrow-back"
+          src="../../assets/img/arrow_back.png" alt="">
         <h1>Наши вакансии</h1>
         <div class="vacanties-item">
           <p class="vacanties-head">WEB-ДИЗАЙНЕР</p>

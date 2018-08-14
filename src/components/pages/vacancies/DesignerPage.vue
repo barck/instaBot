@@ -1,6 +1,10 @@
 <template>
-  <div class="vacancies-page">
+  <div class="vacancies-page fadeInDown">
     <div class="container">
+      <img
+          @click="$router.go(-1)"
+          class="arrow-back"
+          src="../../../assets/img/arrow_back.png" alt="">
       <div class="vacanvies-page-content">
         <h1>Web Дизайнер</h1>
         <p class="vacancies-page-text">

@@ -1,5 +1,5 @@
 <template>
-  <div class="contacts-screen" id="contacts">
+  <div class="contacts-screen fadeInDown" id="contacts">
     <div class="container">
       <p class="contacts-head">Связаться с нами</p>
       <form action="">
