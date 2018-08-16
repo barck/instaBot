@@ -1,4 +1,4 @@
-# instabot
+# max.team
 
 > A Vue.js project
 
