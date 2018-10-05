@@ -3,9 +3,9 @@
     <div class="container">
       <p class="contacts-head">Связаться с нами</p>
       <form action="">
-        <input type="text" placeholder="Телефон">
+        <input type="email" placeholder="E-mail">
         <textarea name="message" id="" cols="30" rows="10"
-          placeholder="Введите сообщение"></textarea>
+          placeholder="Ваш вопрос"></textarea>
         <button>Отправить</button>
       </form>
     </div>
